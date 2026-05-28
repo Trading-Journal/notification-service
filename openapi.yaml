@@ -1,0 +1,36 @@
+openapi: "3.0.3"
+info:
+  title: "Notification Service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8093"
+paths:
+  "/notifications":
+    post:
+      summary: "              Send a notification"
+      responses:
+        "200":
+          description: OK
+  "/notifications/{userId}":
+    get:
+      summary: "/notifications/{userId}      Get notifications for user"
+      responses:
+        "200":
+          description: OK
+  "/notifications/{id}/read":
+    put:
+      summary: "/notifications/{id}/read     Mark notification as read"
+      responses:
+        "200":
+          description: OK
+  "/preferences/{userId}":
+    get:
+      summary: "/preferences/{userId}        Get delivery preferences"
+      responses:
+        "200":
+          description: OK
+    put:
+      summary: "/preferences/{userId}        Update delivery preferences"
+      responses:
+        "200":
+          description: OK

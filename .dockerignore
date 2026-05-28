@@ -1,0 +1,11 @@
+.git
+build/
+.gradle/
+target/
+*.md
+.env
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
