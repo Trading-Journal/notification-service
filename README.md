@@ -17,3 +17,5 @@ docker run -p 8093:8093 notification-service
 ```
 
 Health: <http://localhost:8093/actuator/health/live>
+
+test
